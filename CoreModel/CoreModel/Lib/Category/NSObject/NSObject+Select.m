@@ -127,7 +127,7 @@
                     
                     NSString *limit=@"1";
                     
-                    [NSClassFromString(ivar.typeString) selectWhere:where_childModelField groupBy:nil orderBy:nil limit:limit selectResultsBlock:^(NSArray *selectResults) {
+                    [NSClassFromString(ivar.code) selectWhere:where_childModelField groupBy:nil orderBy:nil limit:limit selectResultsBlock:^(NSArray *selectResults) {
                         
                         if(selectResults.count>0){
                             [model setValue:selectResults.firstObject forKey:ivar.name];

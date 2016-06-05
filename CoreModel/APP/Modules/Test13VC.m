@@ -29,6 +29,12 @@
     [Person save:p5 resBlock:^(BOOL res) {
 
         [self show:res];
+        
+        [Person find:5 selectResultBlock:^(id selectResult) {
+            
+            
+            NSLog(@"%@", selectResult);
+        }];
     }];
     
 }
